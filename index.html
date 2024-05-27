@@ -72,6 +72,28 @@
             display: block;
             /* 消除图片下方的空白间隙 */
         }
+
+        @media (max-width: 768px) {
+    body {
+        margin: 20px 10px; /* 较小的边距适应小屏幕 */
+    }
+
+    .student .sc {
+        flex-direction: column; /* 在小屏幕上垂直堆叠 */
+        align-items: flex-start; /* 对齐到开始位置 */
+    }
+
+    .sc img {
+        width: 100%; /* 图片宽度占满容器 */
+        height: auto; /* 高度自动调整以保持纵横比 */
+        margin-right: 0; /* 移除图片右侧的间隔 */
+        margin-bottom: 10px; /* 在图片和文本之间添加一些间隔 */
+    }
+
+    .info-item, .info-email {
+        font-size: 16px; /* 在小屏幕上减小字体大小 */
+    }
+}
     </style>
 </head>
 
