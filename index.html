@@ -93,6 +93,42 @@
     .info-item, .info-email {
         font-size: 16px; /* 在小屏幕上减小字体大小 */
     }
+
+         .wp_single .wp_articlecontent img {
+        width: 100%; /* 图片宽度占满可用宽度 */
+        height: auto; /* 高度自动调整 */
+        float: none; /* 取消浮动，使图片在文本上方显示 */
+        margin: 0 0 10px 0; /* 调整图片的外边距 */
+    }
+
+    .wp_single .wp_articlecontent {
+        font-size: 16px; /* 减小文字的字体大小 */
+    }
+
+    .wp_single .wp_articlecontent span {
+        display: block; /* 使得每个元素都占据一行 */
+        margin: 5px 0; /* 调整间距 */
+    }
+
+    .wp_single .wp_articlecontent strong {
+        font-size: 18px; /* 强调文字的字体大小 */
+    }
+
+    /* 调整标题大小 */
+    .wp_single .wp_articlecontent p > span[style*="font-size:26px"] {
+        font-size: 22px; /* 减小标题的字体大小 */
+    }
+
+    /* 调整段落中的内联样式 */
+    .wp_single .wp_articlecontent p[style] {
+        line-height: 1.4em;
+        margin-bottom: 10px; /* 调整段落的行高和底部外边距 */
+    }
+
+    /* 调整教育工作经历和科研项目标题的样式 */
+    .wp_single .wp_articlecontent strong[style*="font-size:20px"] {
+        font-size: 18px; /* 减小这些标题的字体大小 */
+    }
 }
     </style>
 </head>
